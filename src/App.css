@@ -7,26 +7,59 @@
   height: 40vmin;
 }
 
-.App-header {
+body {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: "Roboto Slab", serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ruda", sans-serif;
+  background: -webkit-linear-gradient(top, #4b77f7, #c34b93);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+  padding: 2px;
+}
+
+.body {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header {
+  align-items: center;
+  display: flex;
+  margin: 0.3em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#logo,
+nav {
+  flex: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: left;
+}
+
+nav li {
+  color: #cccccc;
+  list-style: none;
+  margin: 0 1rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+nav li:hover {
+  color: white;
+  border-bottom: 0.5px solid white;
+}
+
+.css-grid-base {
+  color: white;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-row-gap: 1rem;
 }
